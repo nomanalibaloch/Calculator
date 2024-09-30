@@ -23,54 +23,53 @@ let equal = document.getElementById("=");
 one.addEventListener("pointerdown", function() {
     appendToDisplay("1");
 });
-two.addEventListener("click", function() {
+two.addEventListener("pointerdown", function() {
     appendToDisplay("2");
 });
-three.addEventListener("click", function() {
+three.addEventListener("pointerdown", function() {
     appendToDisplay("3");
 });
-four.addEventListener("click", function() {
+four.addEventListener("pointerdown", function() {
     appendToDisplay("4");
 });
-five.addEventListener("click", function() {
+five.addEventListener("pointerdown", function() {
     appendToDisplay("5");
 });
-six.addEventListener("click", function() {
+six.addEventListener("pointerdown", function() {
     appendToDisplay("6");
 });
-seven.addEventListener("click", function() {
+seven.addEventListener("pointerdown", function() {
     appendToDisplay("7");
 });
-eight.addEventListener("click", function() {
+eight.addEventListener("pointerdown", function() {
     appendToDisplay("8");
 });
-nine.addEventListener("click", function() {
+nine.addEventListener("pointerdown", function() {
     appendToDisplay("9");
 });
-zero.addEventListener("click", function() {
+zero.addEventListener("pointerdown", function() {
     appendToDisplay("0");
 });
-minus.addEventListener("click", function() {
+minus.addEventListener("pointerdown", function() {
     appendToDisplay("-");
 });
-plus.addEventListener("click", function() {
+plus.addEventListener("pointerdown", function() {
     appendToDisplay("+");
 });
-multiply.addEventListener("click", function() {
+multiply.addEventListener("pointerdown", function() {
     appendToDisplay("*");
 });
-divide.addEventListener("click", function() {
+divide.addEventListener("pointerdown", function() {
     appendToDisplay("/");
 });
-dot.addEventListener("click", function() {
+dot.addEventListener("pointerdown", function() {
     appendToDisplay(".");
 });
-clear.addEventListener("click", function() {
+clear.addEventListener("pointerdown", function() {
     h1.innerText = "0";
 });
-equal.addEventListener("click", function() {
+equal.addEventListener("pointerdown", function() {
     try {
-        
         let expression = h1.innerText.replace(/\^2/g, '**2');
         let ans = eval(expression);
         h1.innerText = ans;
@@ -78,10 +77,9 @@ equal.addEventListener("click", function() {
         h1.innerText = "Error";
     }
 });
-square.addEventListener("click", function() {
+square.addEventListener("pointerdown", function() {
     appendToDisplay("^2");
 });
-
 
 function appendToDisplay(value) {
     if (h1.innerText === "0" || h1.innerText === "Error") {
