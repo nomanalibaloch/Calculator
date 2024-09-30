@@ -20,7 +20,7 @@ let mod = document.getElementById('%');
 let dot = document.getElementById('.');
 let equal = document.getElementById("=");
 
-one.addEventListener("click", function() {
+one.addEventListener("pointerdown", function() {
     appendToDisplay("1");
 });
 two.addEventListener("click", function() {
